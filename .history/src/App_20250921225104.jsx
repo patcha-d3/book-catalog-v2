@@ -6,7 +6,7 @@ import data from "../data/books.json";
 const CARD_COUNT = 2;
 
 function App() {
-  const [books, setBooks] = useState(data);
+  const [books, setBooks] = useState([data]);
 
   return (
     <div className="app">
@@ -15,15 +15,12 @@ function App() {
       </header>
 
       <main className="content">
-        <div className="button-add">
-          <h2>Add</h2>
-        </div>
-
         {books.map((book) => (
           <Book
             key={book.isbn13}
             image={book.image}
-            price={book.price}
+            title={book.title}
+            author={book.subtitle}
             link={book.url}
           />
         ))}

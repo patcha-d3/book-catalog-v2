@@ -50,9 +50,9 @@ html {
 
 .button-add,
 .card-book {
-  flex: 1 1 20em;
-  max-width: 20em;
-  height: 34em;
+  flex: 1 1 20em; /* ยืด-หดได้ โดยมีฐานกว้าง ~20em */
+  max-width: 20em; /* ไม่กว้างเกินการ์ด */
+  height: 34em; /* สูงเท่ากัน (แทน max-height เดิม) */
 }
 
 .button-add {
@@ -60,9 +60,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 12em;
-  height: 20em;
-  border: 2px solid grey;
+  max-width: 12em; /* same width as card-book */
+  height: 20em; /* same height as card-book */
+  border: 2px dashed grey;
   border-radius: 0.5em;
   color: grey;
   background-color: #fff;
@@ -76,10 +76,9 @@ html {
 }
 
 .button-add:hover {
-  background-color: salmon;
+  background-color: #007bff; /* blue */
   color: white;
-  border-color: salmon;
-  font-weight: bold;
+  border-color: #007bff;
 }
 
 .button-add:hover h2 {
@@ -144,7 +143,6 @@ html {
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .link-button::hover {

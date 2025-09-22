@@ -1,6 +1,6 @@
 import "./App.css";
 
-function Book({ image, price, link }) {
+ffunction Book({ image, price, link }) {
   return (
     <div className="card-book">
       <div className="card-book-image">

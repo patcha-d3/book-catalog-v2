@@ -20,12 +20,7 @@ function App() {
         </div>
 
         {books.map((book) => (
-          <Book
-            key={book.isbn13}
-            image={book.image}
-            price={book.price}
-            link={book.url}
-          />
+          <Book key={book.isbn13} image={book.image} link={book.url} />
         ))}
       </main>
 

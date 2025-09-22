@@ -23,7 +23,8 @@ function App() {
           <Book
             key={book.isbn13}
             image={book.image}
-            price={book.price}
+            title={book.title}
+            author={book.subtitle}
             link={book.url}
           />
         ))}
