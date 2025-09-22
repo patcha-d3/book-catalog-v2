@@ -21,16 +21,14 @@ function App() {
           </div>
         </div>
 
-        <div className="content-books">
-          {books.map((book) => (
-            <Book
-              key={book.isbn13}
-              image={book.image}
-              price={book.price}
-              link={book.url}
-            />
-          ))}
-        </div>
+        {books.map((book) => (
+          <Book
+            key={book.isbn13}
+            image={book.image}
+            price={book.price}
+            link={book.url}
+          />
+        ))}
       </main>
 
       <footer className="footer">

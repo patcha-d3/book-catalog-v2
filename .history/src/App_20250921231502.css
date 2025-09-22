@@ -45,20 +45,23 @@ html {
   padding: 4em;
 }
 
-.content-add {
-  flex: 0 0 auto;
-}
-
 .button-add,
 .card-book {
+  flex: 1 1 20em;
+  max-width: 20em;
+  height: 34em;
+}
+
+.button-add {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 12em;
+  max-width: 12em;
   height: 20em;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 0.5em;
+  color: grey;
   background-color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -80,14 +83,6 @@ html {
   color: white; /* make text readable on blue */
 }
 
-.content-books {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 2em;
-  flex: 1;
-}
-
 .card-book div {
   margin: 0 auto;
 }
@@ -98,7 +93,7 @@ html {
   max-width: 12em;
   height: 20em;
   padding: 0.5em;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 0.5em;
   text-align: center;
   color: grey;
@@ -108,10 +103,12 @@ html {
 
 .card-book-image {
   flex: 0 0 auto;
+  border: 1px solid grey;
   display: grid;
   place-items: center;
-  max-width: 100%;
-  max-height: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 80%;
+  max-height: 80%;
   margin: 0 auto;
 }
 
@@ -125,6 +122,7 @@ html {
   display: flex;
   flex-direction: column;
   flex: 1; /* stretch body to take all available space */
+  padding-top: 0.5em;
 }
 
 .card-book-price {

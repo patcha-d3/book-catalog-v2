@@ -57,7 +57,7 @@ html {
   align-items: center;
   min-width: 12em;
   height: 20em;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 0.5em;
   background-color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -98,7 +98,7 @@ html {
   max-width: 12em;
   height: 20em;
   padding: 0.5em;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 0.5em;
   text-align: center;
   color: grey;

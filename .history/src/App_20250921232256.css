@@ -92,20 +92,6 @@ html {
   margin: 0 auto;
 }
 
-.card-book {
-  display: flex;
-  flex-direction: column;
-  max-width: 12em;
-  height: 20em;
-  padding: 0.5em;
-  border: 1px solid grey;
-  border-radius: 0.5em;
-  text-align: center;
-  color: grey;
-  background-color: white;
-  overflow: hidden;
-}
-
 .card-book-image {
   flex: 0 0 auto;
   display: grid;
